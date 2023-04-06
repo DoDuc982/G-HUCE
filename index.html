@@ -23,7 +23,7 @@
         </div>
         <div id="top-spaced"></div>
         <div id="sign-up">
-          <a href="#">Đăng ký ngay</a>
+          <a onclick="goToForm()">Đăng ký ngay</a>
         </div>
       </div>
       <div id="bottom-top-page">
@@ -131,12 +131,28 @@
             src="./assets/img/57114767_2382072171811512_9159308248833064960_n.jpg"
           />
         </div>
-        <button onclick="">
+        <button onclick="goToHomepage()">
           Tìm hiểu thêm <img src="./assets/img/firrarrowright.svg" alt="" />
         </button>
       </div>
     </div>
     <div id="text-bar-2">
+      <div class="full-text-2">
+        <img
+          src="./assets/img/star-1234.svg"
+          alt=""
+          style="padding: 0 20px; height: 30px"
+        />
+        SIXSTRINGS
+      </div>
+      <div class="full-text-2">
+        <img
+          src="./assets/img/star-1234.svg"
+          alt=""
+          style="padding: 0 20px; height: 30px"
+        />
+        SIXSTRINGS
+      </div>
       <div class="full-text-2">
         <img
           src="./assets/img/star-1234.svg"
@@ -220,28 +236,40 @@
             <div class="performaces-name">Mở đơn, nhận bài dự thi</div>
           </div>
           <div class="content-info">
-            <div class="date">27/03 - 08/04</div>
-            <div class="performaces-name">Mở đơn, nhận bài dự thi</div>
+            <div class="date">29/03 - 09/04</div>
+            <div class="performaces-name">
+              Triển khai thực hiện cuộc thi Up các bài dự thi lên trang fanpage
+              và trang sự kiện
+            </div>
           </div>
           <div class="content-info">
-            <div class="date">27/03 - 08/04</div>
-            <div class="performaces-name">Mở đơn, nhận bài dự thi</div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="content-info">
-            <div class="date">27/03 - 08/04</div>
-            <div class="performaces-name">Mở đơn, nhận bài dự thi</div>
-          </div>
-          <div class="content-info">
-            <div class="date">27/03 - 08/04</div>
-            <div class="performaces-name">Mở đơn, nhận bài dự thi</div>
+            <div class="date">10/04</div>
+            <div class="performaces-name">Công bố kết quả</div>
           </div>
         </div>
         <div class="content">
           <div class="content-info">
-            <div class="date">27/03 - 08/04</div>
-            <div class="performaces-name">Mở đơn, nhận bài dự thi</div>
+            <div class="date">12/04 - 14/04</div>
+            <div class="performaces-name">
+              Đặt bàn truyền thống cho chương trình và nhà tài trợ tại sảnh H3
+              trường Đại học Xây dựng Hà Nội.
+            </div>
+          </div>
+          <div class="content-info">
+            <div class="date">13/04</div>
+            <div class="performaces-name">
+              Du ca: chơi nhạc giao lưu tại sảnh G3 quảng bá và phát vé miễn phí
+              tham gia chương trình.
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-info">
+            <div class="date">15/04</div>
+            <div class="performaces-name">
+              Khai mạc LIVE SHOW: SixStrings - City of Stars kỷ niệm 22 năm
+              thành lập CLB.
+            </div>
           </div>
         </div>
       </div>
@@ -264,7 +292,7 @@
           <div id="seconds">0</div>
         </div>
       </div>
-      <button onclick="">ĐĂNG KÝ NGAY</button>
+      <button onclick="goToForm()">ĐĂNG KÝ NGAY</button>
 
       <div id="footer-content">
         <div id="introduce">
@@ -291,10 +319,10 @@
         </div>
       </div>
     </div>
-    <div id="not-available">
+    <!-- <div id="not-available">
       Trình duyệt không hỗ trợ, hãy xoay ngang màn hình để có trải nghiệm tốt
       nhất
-    </div>
+    </div> -->
     <script>
       const countDownDate = new Date("2023-04-15T20:00:00Z").getTime();
       const countdownEl = document.getElementById("countdown");
@@ -314,6 +342,12 @@
         document.getElementById("minutes").innerHTML = minutes;
         document.getElementById("seconds").innerHTML = seconds;
       }, 1000);
+      function goToHomepage() {
+        window.open("https://www.facebook.com/GHUCE", "_blank");
+      }
+      function goToForm() {
+        window.open("https://www.google.com", "_blank");
+      }
     </script>
   </body>
 </html>
