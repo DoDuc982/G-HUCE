@@ -432,14 +432,25 @@ body {
     display: none;
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
-    #top-page,
-    #middle-page,
-    #text-bar-2,
-    #middle-page-2,
-    #footer {
+    #text-bar-1,
+    #text-bar-2 {
         display: none;
+    }
+
+    #bottom-middle-page-content {
+        display: none;
+    }
+
+    #bottom-middle-page {
+        width: 90%;
+    }
+
+    #bottom-middle-page-img img {
+        width: 130px;
+        height: auto;
+        padding: 10px;
     }
 
     #not-available {
@@ -450,7 +461,68 @@ body {
         text-align: center;
     }
 
-} */
+    #footer-content {
+        padding: 20px 20px;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    #sign-up {
+        width: 100px;
+        text-align: center;
+        font-size: small;
+    }
+
+    #middle-page-2 {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #spaced {
+        display: none;
+    }
+
+    #middle-page-2 {
+        flex-direction: row;
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    #shows,
+    #performances-date {
+        flex-direction: column;
+        width: 50%;
+        margin-left: 25px;
+    }
+
+    #performances-date {
+        margin-right: 20px;
+    }
+
+    #shows div {
+        padding: 80px 0;
+    }
+
+    #event-info {
+        width: 90%;
+    }
+
+    #text-bar-1,
+    #text-bar-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #text-bar-1,
+    #text-bar-2 {
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 480px) {
 
@@ -488,11 +560,6 @@ body {
         font-size: small;
     }
 
-    #text-bar-1,
-    #text-bar-2 {
-        margin: 5px;
-    }
-
     #middle-page-2 {
         margin-top: 50px;
         width: 100%;
@@ -527,5 +594,10 @@ body {
 
     #event-info {
         width: 90%;
+    }
+
+    #text-bar-1,
+    #text-bar-2 {
+        display: none;
     }
 }
