@@ -420,3 +420,27 @@ body {
 #nav-footer img {
     padding: 0px 5px;
 }
+
+#not-available {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    #top-page,
+    #middle-page,
+    #text-bar-2,
+    #middle-page-2,
+    #footer {
+        display: none;
+    }
+
+    #not-available {
+        padding-top: 40%;
+        display: block;
+        font-size: xx-large;
+        color: #ffffff;
+        text-align: center;
+    }
+
+}
