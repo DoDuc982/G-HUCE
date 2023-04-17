@@ -1,8 +1,8 @@
 * {
     margin: 0;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 body {
     background-color: #121332;
@@ -232,6 +232,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 0 15px;
+    cursor: pointer;
 }
 
 #text-bar-2 {
@@ -253,12 +254,24 @@ body {
 }
 
 #middle-page-2 {
-    margin-top: 120px;
+    margin-top: 50px;
+    padding-top: 120px;
     width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    background-image: url("/assets/img/anh_mo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 30px;
+}
+
+#middle-page-2 {
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 #timeline {
@@ -387,6 +400,7 @@ body {
     font-weight: bolder;
     font-size: medium;
     padding: 0 15px;
+    cursor: pointer;
 }
 
 #footer-content {
